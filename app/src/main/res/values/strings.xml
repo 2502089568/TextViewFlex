@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">TextViewFlex</string>
+    <string name="txt_info">
+文章标签： android textview
+        aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+        aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+        aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+        bbbbbbbbbbbbbbbbbbbbbbbbbbb
+ </string>
+
+    <string name="txt_info1">
+文章标签： android textview
+        aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+        aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+ </string>
+    <string name="txt_info2">
+文章标签： android textview
+ </string>
+</resources>

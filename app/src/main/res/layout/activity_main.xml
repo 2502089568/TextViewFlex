@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:more="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- 显示文本 -->
+    <TextView
+        android:id="@+id/text_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="false" />
+    <!--android:ellipsize="end"-->
+
+    <!-- 更多和箭头 -->
+    <RelativeLayout
+        android:id="@+id/show_more"
+        android:layout_below="@id/text_content"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dip"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textSize="13sp"
+            android:textColor="#999"
+            android:layout_marginRight="34dip"
+            android:text="更多" />
+
+
+        <ImageView
+            android:id="@+id/spread"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/ic_details_more" />
+
+        <ImageView
+            android:id="@+id/shrink_up"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/ic_shrink_up"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/png"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:scaleType="fitXY"
+        android:layout_below="@+id/show_more"
+        android:src="@drawable/ic_launcher_background" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/png"
+        >
+    <com.example.zz.textviewflex.mView.MoreTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dip"
+        more:textColor="@android:color/black"
+        more:textSize="18dip"
+        more:maxLine="3"
+        more:text="@string/txt_info"/>
+    </RelativeLayout>
+
+</RelativeLayout>
