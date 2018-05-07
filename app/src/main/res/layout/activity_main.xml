@@ -67,7 +67,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="5dip"
-        more:textColor="@android:color/black"
+        more:textColor="#a333"
         more:textSize="18dip"
         more:maxLine="3"
         more:text="@string/txt_info"/>

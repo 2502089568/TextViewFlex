@@ -28,7 +28,7 @@ public class MoreTextView extends LinearLayout {
     protected String text;
 
     //默认属性值
-    public int defaultTextColor = Color.BLACK;
+    public int defaultTextColor =Color.argb(3,3,3,3);
     public int defaultTextSize = 12;
     public int defaultLine = 3;
 
